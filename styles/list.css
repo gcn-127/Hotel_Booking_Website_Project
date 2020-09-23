@@ -1,3 +1,10 @@
 .smoothScrool {
     scroll-behavior: smooth;
 }
+
+.hotel {
+    background-color: rgb(132, 136, 139);
+    margin: 4%;
+    width: 40%;
+    height: auto;
+}

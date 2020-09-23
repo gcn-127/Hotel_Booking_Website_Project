@@ -4,6 +4,8 @@
 <head>
 
     <title>detail</title>
+    <link rel="stylesheet" href="/styles/common.css">
+    <link rel="stylesheet" href="/styles/detail.css">
     <style>
         .full {
             height: 100%;
@@ -25,33 +27,36 @@
             <a href="login.html" target="_blank">Login</a>
         </header>
 
-        <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson blu" height="500" width="500">
+        <div id="detailsImage"> <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson blu" height="500" width="500">
+        </div>
         <div>
 
             <form action="payment.html" method="GET" id="book1">
                 <table>
-                    <td>
-                        <tr><label for="adults">Adults:</label>
-                            <input type="number" id="adults" name="adults" min="1" required><br></tr>
-                    </td>
-                    <tr>
-                        <td> <label for="fname">Name:</label>
-                            <input type="text" id="fname" name="fname" autocomplete="off" required><br></tr>
-                    </td>
-                    <tr>
-                        <td> <label for="Fdate">Frome Date:</label>
-                            <input type="date" id="Fdate" name="Fdate" required><br></tr>
-                    </td>
-                    <tr>
-                        <td> <label for="Tdate">To Date:</label>
-                            <input type="date" id="Tdate" name="Tdate" required><br></tr>
-                    </td>
+                    <th>
+                        <td>
+                            <tr><label for="adults">Adults:</label>
+                                <input type="number" id="adults" name="adults" min="1" required><br></tr>
+                        </td>
+                        <tr>
+                            <td> <label for="fname">Name:</label>
+                                <input type="text" id="fname" name="fname" autocomplete="off" required><br></tr>
+                        </td>
+                        <tr>
+                            <td> <label for="Fdate">From     Date:</label>
+                                <input type="date" id="Fdate" name="Fdate" required><br></tr>
+                        </td>
+                        <tr>
+                            <td> <label for="Tdate">To Date:</label>
+                                <input type="date" id="Tdate" name="Tdate" required><br></tr>
+                        </td>
 
-                    </td>
-                    <tr>
-                        <td> <label for="total1">Total:</label>
-                            <input type="total1" id="total1" name="total1" readonly><br></tr>
-                    </td>
+                        </td>
+                        <tr>
+                            <td> <label for="total1">Total:</label>
+                                <input type="total1" id="total1" name="total1" readonly><br></tr>
+                        </td>
+
 
 
                 </table>
@@ -60,7 +65,7 @@
             </form>
 
         </div>
-        <div>
+        <div id="hotel_description">
             <h3>Radisson blu Hotel</h3>
             <dl>RATING</dl>
             <dl>5 STAR</dl>
