@@ -77,7 +77,7 @@
     float: left;
 }
 
-.hotels {
+.hotel-divied {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
