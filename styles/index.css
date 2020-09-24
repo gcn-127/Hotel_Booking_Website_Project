@@ -25,3 +25,41 @@
     border-radius: 25%;
     padding: 4%;
 }
+
+.login {
+    float: right;
+    text-align: center;
+    padding: 1.5%;
+}
+
+.search-bar {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 348px;
+    width: 100%;
+}
+
+.search-bar input {
+    border: 1px solid transparent;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 12px;
+    width: 100%;
+    outline: none;
+}
+
+.view-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    color: black;
+}
+
+.view-more a {
+    color: black;
+    text-decoration: none;
+}
