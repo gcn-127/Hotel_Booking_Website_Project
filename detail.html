@@ -10,6 +10,24 @@
         .full {
             height: 100%;
             width: 100%;
+            margin-top: 4%;
+            padding-top: 2%;
+        }
+        
+        .tabMain {
+            border: 1px black solid;
+            width: 100%;
+            height: 400px;
+            height: 400px;
+        }
+        
+        .innerTable {
+            height: 300px;
+            width: 100%;
+        }
+        
+        .tdMainBorder {
+            border: 1px black solid;
         }
     </style>
 
@@ -27,42 +45,58 @@
             <a href="login.html" target="_blank">Login</a>
         </header>
 
-        <div id="detailsImage"> <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson blu" height="500" width="500">
-        </div>
-        <div>
+    </div>
+    <div>
+        <form action="payment.html" method="GET" id="book1">
 
-            <form action="payment.html" method="GET" id="book1">
-                <table>
-                    <th>
-                        <td>
-                            <tr><label for="adults">Adults:</label>
-                                <input type="number" id="adults" name="adults" min="1" required><br></tr>
-                        </td>
-                        <tr>
-                            <td> <label for="fname">Name:</label>
-                                <input type="text" id="fname" name="fname" autocomplete="off" required><br></tr>
-                        </td>
-                        <tr>
-                            <td> <label for="Fdate">From     Date:</label>
-                                <input type="date" id="Fdate" name="Fdate" required><br></tr>
-                        </td>
-                        <tr>
-                            <td> <label for="Tdate">To Date:</label>
-                                <input type="date" id="Tdate" name="Tdate" required><br></tr>
-                        </td>
+            <table class="tabMain">
+                <tr>
 
-                        </td>
-                        <tr>
-                            <td> <label for="total1">Total:</label>
-                                <input type="total1" id="total1" name="total1" readonly><br></tr>
-                        </td>
+                    <td class="tdMainBorder" style="text-align: center; vertical-align: middle">
+                        <div id="detailsImage"> <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson blu" height="300px" width="300px">
+                    </td>
+                    <td class="tdMainBorder" style="text-align: center; vertical-align: middle">
+                        <table class="innerTable">
+                            <tr>
+                                <td><label for="adults">Adults:</label></td>
+                                <td>
+                                    <input type="number" id="adults" name="adults" min="1" required><br>
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td><label for="fname">Name:</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="fname" name="fname" autocomplete="off" required> </td>
+                            </tr>
+                            <tr>
+                                <td> <label for="Fdate">From     Date:</label></td>
+                                <td>
+                                    <input type="date" id="Fdate" name="Fdate" required> </td>
+                            </tr>
+                            <tr>
+                                <td> <label for="Tdate">To Date:</label></td>
+                                <td>
+                                    <input type="date" id="Tdate" name="Tdate" required> </td>
+                            </tr>
+                            <tr>
+                                <td><label for="total1">Total:</label></td>
+                                <td>
+                                    <input type="total1" id="total1" name="total1" readonly> </td>
+                            </tr>
+                        </table>
+                        <button type="submit" form="book1" value="book1">Book Now   </button>
+
+                    </td>
+                </tr>
+            </table>
+        </form>
 
 
+        </table>
 
-                </table>
-                <button type="submit" form="book1" value="book1">Book Now   </button>
-
-            </form>
+        </form>
 
         </div>
         <div id="hotel_description">
@@ -71,7 +105,8 @@
             <dl>5 STAR</dl>
 
             <dl>
-                <ul>AMENITIES
+                <ul>
+                    <h3>AMENITIES</h3>
                     <dd>
                         <li>Room Service</li>
                         <li>Restraunt</li>
@@ -80,13 +115,14 @@
                         <li>Pool</li>
                     </dd>
                 </ul>
+            </dl>
 
-                <dl>
-                    <dt>
+            <dl>
+                <dt>
                     <h4>Description</h4></dt>
-                    <dd> <dt>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quasi sint recusandae iste illum quidem. Impedit explicabo quos eum perspiciatis ducimus veniam, ut sed, iste quod voluptates dolorem saepe animi!</dd></dt>
+                <dd> <dt>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quasi sint recusandae iste illum quidem. Impedit explicabo quos eum perspiciatis ducimus veniam, ut sed, iste quod voluptates dolorem saepe animi!</dd></dt>
 
-                </dl>
+            </dl>
 
 
 
