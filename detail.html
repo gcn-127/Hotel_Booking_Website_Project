@@ -6,6 +6,17 @@
     <title>detail</title>
     <link rel="stylesheet" href="/styles/common.css">
     <link rel="stylesheet" href="/styles/detail.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+
+
     <style>
         .full {
             height: 100%;
@@ -33,7 +44,7 @@
 
 </head>
 
-<body>
+<body class="background">
     <div class="full">
 
         <header>
@@ -41,134 +52,138 @@
             <a href="index.html">
                 <img src="assests\images\logo.png" alt="logo" height="60" width="60">
             </a>
+            <button type="button" class="btn login" data-toggle="modal" data-target="#registerModal" id="sign-in-button">
+                Login
+            </button>
 
-            <a href="login.html" target="_blank">Login</a>
         </header>
 
-    </div>
-    <div>
-        <form action="payment.html" method="GET" id="book1">
+        <div>
 
-            <table class="tabMain">
-                <tr>
+            <form action="payment.html" method="GET" id="book1">
 
-                    <td class="tdMainBorder" style="text-align: center; vertical-align: middle">
-                        <div id="detailsImage"> <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson blu" height="300px" width="300px">
-                    </td>
-                    <td class="tdMainBorder" style="text-align: center; vertical-align: middle">
-                        <table class="innerTable">
-                            <tr>
-                                <td><label for="adults">Adults:</label></td>
-                                <td>
-                                    <input type="number" id="adults" name="adults" min="1" required><br>
-                                </td>
-                            </tr>
-                            <tr>
+                <table class="tabMain">
+                    <tr>
 
-                                <td><label for="fname">Name:</label>
-                                </td>
-                                <td>
-                                    <input type="text" id="fname" name="fname" autocomplete="off" required> </td>
-                            </tr>
-                            <tr>
-                                <td> <label for="Fdate">From     Date:</label></td>
-                                <td>
-                                    <input type="date" id="Fdate" name="Fdate" required> </td>
-                            </tr>
-                            <tr>
-                                <td> <label for="Tdate">To Date:</label></td>
-                                <td>
-                                    <input type="date" id="Tdate" name="Tdate" required> </td>
-                            </tr>
-                            <tr>
-                                <td><label for="total1">Total:</label></td>
-                                <td>
-                                    <input type="total1" id="total1" name="total1" readonly> </td>
-                            </tr>
-                        </table>
-                        <button type="submit" form="book1" value="book1">Book Now   </button>
+                        <td class="tdMainBorder" style="text-align: center; vertical-align: middle">
+                            <div id="detailsImage"> <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson blu" height="300px" width="300px">
+                        </td>
+                        <td class="tdMainBorder" style="text-align: center; vertical-align: middle">
+                            <table class="innerTable">
+                                <tr>
+                                    <td><label for="adults">Adults:</label></td>
+                                    <td>
+                                        <input type="number" id="adults" name="adults" min="1" required><br>
+                                    </td>
+                                </tr>
+                                <tr>
 
-                    </td>
-                </tr>
+                                    <td><label for="fname">Name:</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" id="fname" name="fname" autocomplete="off" required> </td>
+                                </tr>
+                                <tr>
+                                    <td> <label for="Fdate">From     Date:</label></td>
+                                    <td>
+                                        <input type="date" id="Fdate" name="Fdate" required> </td>
+                                </tr>
+                                <tr>
+                                    <td> <label for="Tdate">To Date:</label></td>
+                                    <td>
+                                        <input type="date" id="Tdate" name="Tdate" required> </td>
+                                </tr>
+                                <tr>
+                                    <td><label for="total1">Total:</label></td>
+                                    <td>
+                                        <input type="total1" id="total1" name="total1" readonly> </td>
+                                </tr>
+                            </table>
+                            <button type="submit" form="book1" value="book1" class="btn btn-success">Book Now   </button>
+
+                        </td>
+                    </tr>
+                </table>
+            </form>
+
+
             </table>
-        </form>
 
+            </form>
 
-        </table>
+            </div>
+            <div id="hotel_description">
+                <h3>Radisson blu Hotel</h3>
+                <dl>RATING</dl>
+                <dl>5 STAR</dl>
 
-        </form>
+                <dl>
+                    <ul>
+                        <h3>AMENITIES</h3>
+                        <dd>
+                            <li>Room Service</li>
+                            <li>Restraunt</li>
+                            <li>Business Center</li>
+                            <li>Fitness Center</li>
+                            <li>Pool</li>
+                        </dd>
+                    </ul>
+                </dl>
 
-        </div>
-        <div id="hotel_description">
-            <h3>Radisson blu Hotel</h3>
-            <dl>RATING</dl>
-            <dl>5 STAR</dl>
-
-            <dl>
-                <ul>
-                    <h3>AMENITIES</h3>
-                    <dd>
-                        <li>Room Service</li>
-                        <li>Restraunt</li>
-                        <li>Business Center</li>
-                        <li>Fitness Center</li>
-                        <li>Pool</li>
-                    </dd>
-                </ul>
-            </dl>
-
-            <dl>
-                <dt>
+                <dl>
+                    <dt>
                     <h4>Description</h4></dt>
-                <dd> <dt>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quasi sint recusandae iste illum quidem. Impedit explicabo quos eum perspiciatis ducimus veniam, ut sed, iste quod voluptates dolorem saepe animi!</dd></dt>
+                    <dd> <dt>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quasi sint recusandae iste illum quidem. Impedit explicabo quos eum perspiciatis ducimus veniam, ut sed, iste quod voluptates dolorem saepe animi!</dd></dt>
 
-            </dl>
-
-
+                </dl>
 
 
 
-        </div>
-
-    </div>
-
-    <footer>
-        <div>
-            <a href="contact.html" target="_blank">Contact Us</a>
-        </div>
-
-        <div>
 
 
-            <a href="https://www.facebook.com/">
-
-                <img src="assests/images/facebook.png" alt="facebook" height="20" width="22">
-            </a>
-
-
-            <a href="https://www.instagram.com/">
-
-                <img src="assests/images/instagram.png" alt="instagram" height="20" width="22">
-            </a>
-
-
-
-            <a href="https://twitter.com">
-
-                <img src="assests/images/twitter.png" alt="twitter" height="20" width="22">
-            </a>
-
-            <div>
-
-                <span>&#169; 2020 ROOM SEARCH PVT. LTD</span>
             </div>
 
         </div>
 
+        <footer>
+            <div>
+                <a href="contact.html" target="_blank">Contact Us</a>
+            </div>
+
+            <div>
+
+
+                <a href="https://www.facebook.com/">
+
+                    <img src="assests/images/facebook.png" alt="facebook" height="20" width="22">
+                </a>
+
+
+                <a href="https://www.instagram.com/">
+
+                    <img src="assests/images/instagram.png" alt="instagram" height="20" width="22">
+                </a>
 
 
 
-    </footer>
+                <a href="https://twitter.com">
+
+                    <img src="assests/images/twitter.png" alt="twitter" height="20" width="22">
+                </a>
+
+                <div>
+
+                    <span>&#169; 2020 ROOM SEARCH PVT. LTD</span>
+                </div>
+        </footer>
+
+
+        </div>
+
+
+
+
+    </div>
 
 </body>
 

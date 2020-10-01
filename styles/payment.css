@@ -152,7 +152,7 @@
         margin-bottom: 0;
     }
     
-    .customer-log-deatils {
+    .customer-deatils {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -166,7 +166,7 @@
         padding: 2% 1% 1% 1%;
     }
     
-    .customer_details {
+    .customer {
         margin: 2%;
     }
     
@@ -177,11 +177,11 @@
         border-radius: 5px;
     }
     
-    .pay-now {
+    .pay {
         padding-bottom: 30px;
     }
     
-    .pay-now a {
+    .pay a {
         text-decoration: none;
         color: #000;
     }

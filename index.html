@@ -5,24 +5,68 @@
 
     <title>index</title>
 
+
     <link rel="stylesheet" href="/styles/index.css">
     <link rel="stylesheet" href="styles/common.css">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 
 
 </head>
 
 
-<body>
+<body class="background">
+
+    <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registerModalLabel">Please Register</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="registerInputEmail1">Username</label>
+                            <input type="email" class="form-control" id="registerInputEmail1" aria-describedby="emailHelp" placeholder="Enter Username">
+
+                            <label for="registerInputPassword1">Password</label>
+                            <input type="email" class="form-control" id="registerInputPassword1" aria-describedby="passwordHelp" placeholder="Enter Password">
+
+                            <br>
+
+                        </div>
+                        <button type="register" class="btn btn-primary">Login</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </form>
+                </div>
+                <div class="modal-footer"></div>
+            </div>
+        </div>
+    </div>
+
 
     <div class="full">
 
-        <header>
-            <div> <img src=" assests\images\logo.png " alt="logo " height="60 " width="60 ">
 
-                <a href="login.html " class="login">Login</a></div>
+        <header>
+            <div class="container"> <img src=" assests\images\logo.png " alt="logo " height="60 " width="60 ">
+
+                <button type="button" class="btn login" data-toggle="modal" data-target="#registerModal" id="sign-in-button">
+                    Login
+                </button>
+
+                <!-- Modal -->
+
+            </div>
+
+
 
 
         </header>
@@ -62,56 +106,69 @@
                 <p class="image-title">Kolkata</p>
                 <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" alt="kolkata-calcutta">
             </div>
+
+
         </div>
 
 
+        <div class="view-more">
 
-
-
-    </div>
-
-    <div class="view-more">
-        <a href="index.html " target="_blank ">
-                View more >></a>
-    </div>
-
-
-
-    </div>
-
-    <footer>
-
-        <div class="contact">
-            <a href="contact.html ">Contact Us</a>
-        </div>
-
-        <div class="pvtltd">
-
-            &#169; 2020 ROOM SEARCH PVT. LTD
-        </div>
-
-        <div class=" social-media">
-
-            <a href="https://www.facebook.com/ ">
-
-                <img src="assests/images/facebook.png " alt="facebook " height="20 " width="22 ">
-            </a>
-
-
-            <a href="https://www.instagram.com/ ">
-
-                <img src="assests/images/instagram.png " alt="instagram " height="20 " width="22 ">
+            <a href="index.html " target="_blank ">
+                <button type="button" class="btn btn-secondary">View more </button>
             </a>
 
 
 
-            <a href="https://twitter.com ">
-
-                <img src="assests/images/twitter.png " alt="twitter " height="20 " width="22 ">
-            </a>
-
         </div>
-    </footer>
+
+
+
+
+
+
+
+        <footer>
+
+            <div class="contact">
+                <a href="contact.html">
+                    <button type="button" class="btn btn-info">Contact us </button>
+                </a>
+                </button>
+
+
+            </div>
+
+            <div class="pvtltd">
+
+                &#169; 2020 ROOM SEARCH PVT. LTD
+            </div>
+
+            <div class="social-media">
+
+                <a href="https://www.facebook.com/ ">
+
+                    <img src="assests/images/facebook.png " alt="facebook " height="20 " width="22 ">
+                </a>
+
+
+                <a href="https://www.instagram.com/ ">
+
+                    <img src="assests/images/instagram.png " alt="instagram " height="20 " width="22 ">
+                </a>
+
+
+
+                <a href="https://twitter.com ">
+
+                    <img src="assests/images/twitter.png " alt="twitter " height="20 " width="22 ">
+                </a>
+
+            </div>
+
+
+        </footer>
+
+    </div>
 
 
 

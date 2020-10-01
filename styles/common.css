@@ -52,13 +52,15 @@ footer a img {
 
 .contact a {
     text-decoration: none;
-    color: #000;
+    color: white;
     font-weight: 600;
 }
 
 .social-media {
     display: inline-block;
     margin-right: 2%;
+    float: right;
+    margin-bottom: 2%;
 }
 
 .social-media- a {
@@ -84,7 +86,36 @@ header a {
     color: black;
 }
 
+.background {
+    background-color: rosybrown;
+}
+
 .full a {
     text-decoration: none;
     color: #000;
+}
+
+.full {
+    background-color: #e0e0e0;
+}
+
+.login {
+    float: right;
+    text-align: center;
+    padding: 1.5%;
+}
+
+@media (min-width: 320px) and (max-width: 575px) {
+    form .row {
+        flex-wrap: nowrap;
+    }
+    /* .col-form-label{
+        padding-left: 0;
+    } */
+    .contactus-modal .col-sm-2 {
+        max-width: 15.666667%;
+    }
+    .contactus-modal .col-sm-6 {
+        width: 80%;
+    }
 }
