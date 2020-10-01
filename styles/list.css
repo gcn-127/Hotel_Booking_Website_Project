@@ -19,6 +19,7 @@
             .hotel-card {
                 display: flex;
                 flex-direction: row;
+                text-decoration: none;
             }
             
             .views a {
@@ -28,6 +29,7 @@
             
             .full .views {
                 padding: 15px 0;
+                text-decoration: none;
             }
             
             .full .views ul {
@@ -61,6 +63,7 @@
                 flex-direction: row;
                 flex-wrap: wrap;
                 justify-content: space-between;
+                text-decoration: none;
             }
             
             .hotels img {
@@ -83,6 +86,7 @@
             .hotel-card {
                 display: flex;
                 float: left;
+                text-decoration: none;
             }
             
             .hotel-divied {
@@ -90,6 +94,7 @@
                 flex-direction: row;
                 flex-wrap: wrap;
                 justify-content: space-between;
+                text-decoration: none;
             }
             
             .hotel-card {
@@ -111,10 +116,12 @@
             .hotel-card {
                 display: flex;
                 flex-direction: row;
+                text-decoration: none;
             }
             
             .hotel-name-desc {
                 padding: 5%;
+                text-decoration: none;
             }
             
             .hotels img {
@@ -127,6 +134,7 @@
                 margin: 2% 4%;
                 width: 40%;
                 height: auto;
+                text-decoration: none;
             }
             
             .hotel-box a {
