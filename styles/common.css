@@ -15,7 +15,7 @@ footer {
     background-color: rosybrown;
 }
 
-.text {
+.prettier {
     font-family: cursive;
     font-weight: bold;
 }
@@ -54,7 +54,7 @@ header .login {
     line-height: 1;
 }
 
-.full {
+.common {
     padding-top: 60px;
     min-height: 100vh;
 }
@@ -62,9 +62,6 @@ header .login {
 #logout {
     display: none;
 }
-
-
-/******************* Footer ******************/
 
 footer {
     display: flex;
@@ -109,19 +106,10 @@ footer a img {
     text-align: center;
 }
 
-
-/* .col-sm-2{
-    max-width: 2%;
-    max-width: 9.666667%;
-} */
-
 @media (min-width: 320px) and (max-width: 575px) {
     form .row {
         flex-wrap: nowrap;
     }
-    /* .col-form-label{
-        padding-left: 0;
-    } */
     .contactus-modal .col-sm-2 {
         max-width: 15.666667%;
     }
