@@ -2,70 +2,24 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>list</title>
-    <link rel="stylesheet" href="/styles/common.css">
-    <link rel="stylesheet" href="/styles/list.css">
-    <link rel="stylesheet" href="/styles/index.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
-
+    <title>List</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/list.css">
 </head>
 
-<body class="background">
-    <div class="full">
-        <!-- Modal -->
-        <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="registerModalLabel">Please Register</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="form-group">
-                                <label for="registerInputEmail1">Username</label>
-                                <input type="email" class="form-control" id="registerInputEmail1" aria-describedby="emailHelp" placeholder="Enter Username">
+<body>
+    <div class="main">
 
-                                <label for="registerInputPassword1">Password</label>
-                                <input type="email" class="form-control" id="registerInputPassword1" aria-describedby="passwordHelp" placeholder="Enter Password">
+        <!-- Header Div -->
+        <header id="navheader"></header>
 
-                                <br>
-
-                            </div>
-                            <button type="register" class="btn btn-primary">Login</button>
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        </form>
-                    </div>
-                    <div class="modal-footer"></div>
-                </div>
-            </div>
-        </div>
-        <header>
-            <div>
-                <a href="index.html"> <img src=" assests\images\logo.png " alt="logo " height="60 " width="60 "></a>
-
-                <button type="button" class="btn  login" data-toggle="modal" data-target="#registerModal" id="sign-in-button">
-                    Login
-                </button>
-
-
-
-
-        </header>
-        <div class="full">
+        <!-- Content Div -->
+        <div class="content">
             <div class="views">
                 <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
                     <li class="nav-item">
@@ -77,146 +31,97 @@
                 </ul>
             </div>
 
-            <div class="views">
-                <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active text-dark" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true" href="#list-view">List View</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false" href="#map-view">Map View</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <div class="hotels" id="list-view">
+            <div class="parent-div tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <div class="hotels" id="list-view">
 
-                    <div class="hotel-box">
-                        <a href="detail.html">
-                            <div class="hotel-card">
-                                <div class=>
-                                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blu Hotel">
+                        <div class="hotel-description">
+                            <a href="detail.html">
+                                <div class="hotel-card">
+                                    <div class="card-box1">
+                                        <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blu Hotel">
+                                    </div>
+                                    <div class="card-box2">
+                                        <h3>Radisson Blu Hotel</h3>
+                                        <p>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                        </p>
+                                        <p>New Delhi</p>
+                                    </div>
                                 </div>
-                                <div class="hotel-name-desc">
-                                    <dl>
-                                        <dt><h3>Radisson Blu Hotel</h3></dt>
-                                        <dt>  <p>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                    </p></dt>
-                                        <dt>New Delhi</dt>
-                                    </dl>
-                        </a>
+                            </a>
                         </div>
-                        </div>
-                        </a>
-                    </div>
 
-                    <div class="hotel-box">
-                        <div class="hotel-card">
-                            <div class="card-box1">
-                                <img src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" alt="The Lalit New Delhi">
-                            </div>
-                            <div class="hotel-name-desc">
-                                <dl>
-                                    <dt><h3>The Lalit New Delhi</h3></dt>
-                                    <dt>   <span class="fa fa-star checked"></span>
+                        <div class="hotel-description">
+                            <div class="hotel-card">
+                                <div class="card-box1">
+                                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" alt="The Lalit New Delhi">
+                                </div>
+                                <div class="card-box2">
+                                    <h3>The Lalit New Delhi</h3>
+                                    <p>
+                                        <span class="fa fa-star checked"></span>
                                         <span class="fa fa-star checked"></span>
                                         <span class="fa fa-star checked"></span>
                                         <span class="fa fa-star-half-o checked"></span>
-                                        <span class="fa fa-star"></span></dt>
-                                    <dt>New Delhi</dt>
-                                </dl>
+                                        <span class="fa fa-star"></span>
+                                    </p>
+                                    <p>New Delhi</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="hotel-box">
-                        <div class="hotel-card">
-                            <div class="card-box1">
-                                <img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" alt="Taj Palace"> </div>
-                            <div class="hotel-name-desc">
-                                <dl>
-                                    <dt><h3>Taj Palace  New Delhi</h3></dt>
-                                    <dt>   <span class="fa fa-star checked"></span>
+                        <div class="hotel-description">
+                            <div class="hotel-card">
+                                <div class="card-box1">
+                                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" alt="Taj Palace">
+                                </div>
+                                <div class="card-box2">
+                                    <h3>Taj Palace</h3>
+                                    <p>
                                         <span class="fa fa-star checked"></span>
                                         <span class="fa fa-star checked"></span>
                                         <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star"></span></dt>
-                                    <dt>New Delhi</dt>
-                                </dl>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                    </p>
+                                    <p>New Delhi</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
+                    </div>
                 </div>
 
-
-
-
                 <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                    <div class="map" id="map">
+                    <div class="map" id="map-view">
                         <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt="Map View">
                     </div>
                 </div>
 
-
-                <!--  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                <div class="map" id="map-view">
-                    <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt="Map View">
-                </div>
-            </div>
- -->
             </div>
         </div>
-        </div>
 
+        <!-- Footer -->
+        <footer id="footer"></footer>
 
+        <!-- Modal Login -->
+        <div class="login-modal modal" id="login-modal" data-backdrop="false"></div>
 
+        <!-- Modal 2 Contact Us -->
+        <div class="contactus-modal modal" id="contactus-modal" data-backdrop="false"></div>
 
-        <footer>
-            <div class="contact">
-                <a href="contact.html">
-                    <button type="button" class="btn btn-info">Contact us </button>
-                </a>
-                </button>
-
-
-            </div>
-
-
-            <div class="pvtltd">
-
-                &#169; 2020 ROOM SEARCH PVT. LTD
-            </div>
-
-            <div class="social-media">
-
-                <a href="https://www.facebook.com/ ">
-
-                    <img src="assests/images/facebook.png " alt="facebook " height="20 " width="22 ">
-                </a>
-
-
-                <a href="https://www.instagram.com/ ">
-
-                    <img src="assests/images/instagram.png " alt="instagram " height="20 " width="22 ">
-                </a>
-
-
-
-                <a href="https://twitter.com ">
-
-                    <img src="assests/images/twitter.png " alt="twitter " height="20 " width="22 ">
-                </a>
-
-            </div>
-        </footer>
     </div>
 
+    <!-- jQuery JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="./scripts/common.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6H5h6kpuOxx_9Q0CaoJ6UWaHufqvJgc4"></script>
 </body>
-
 
 </html>

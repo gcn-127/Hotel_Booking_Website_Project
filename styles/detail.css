@@ -23,7 +23,7 @@ p {
     font-family: cursive;
 }
 
-.top-box {
+.box-modle {
     display: flex;
     max-height: 400px;
     flex-direction: row;
@@ -107,7 +107,7 @@ p {
 }
 
 @media (min-width: 320px) and (max-width: 565px) {
-    .top-box {
+    .box-modle {
         flex-direction: column;
         min-height: 705px;
     }

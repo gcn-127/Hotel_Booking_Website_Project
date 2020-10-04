@@ -1,7 +1,12 @@
-.full {
-    height: 100%;
-    width: 100%;
-    background-color: #e0e0e0;
+/******************** Content ******************/
+
+
+/* .content{
+    padding-top: 60px;
+} */
+
+#mydiv {
+    display: none;
 }
 
 .search {
@@ -9,29 +14,6 @@
     height: 380px;
     background-size: cover;
     position: relative;
-}
-
-.city {
-    display: flex;
-    margin-left: 15%;
-    margin-right: 15%;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.city img {
-    width: 150px;
-    height: 150px;
-    border-radius: 25%;
-    padding: 4%;
-}
-
-.login {
-    float: right;
-    text-align: center;
-    padding: 1.5%;
-    background-color: white;
-    margin-top: 1%;
 }
 
 .search-bar {
@@ -53,27 +35,14 @@
     outline: none;
 }
 
-.view-more {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-    color: black;
-}
-
-.view-more a {
-    color: black;
-    text-decoration: none;
-}
-
-.city-img {
+.city {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     /* padding: 5% 0% 3% 0%; */
 }
 
-.city-img img {
+.city img {
     width: 150px;
     height: 150px;
     /* padding: 4%; */
@@ -81,16 +50,16 @@
     box-shadow: 10px 10px 10px grey;
 }
 
-.city-img a {
+.city a {
     text-decoration: none;
 }
 
-.img {
+.images {
     position: relative;
     margin: 10px;
 }
 
-.opacity {
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -116,10 +85,42 @@
     margin-top: 1em;
 }
 
-.img:hover .opacity {
+.images:hover .overlay {
     display: block;
 }
 
-.img:hover .image-title {
+.images:hover .image-title {
     display: block;
+}
+
+.view-more {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.view-more a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+@media (min-width: 320px) and (max-width: 575px) {
+    .search-bar {
+        width: 50%;
+    }
+    .city {
+        width: 50%;
+        margin: 0px auto;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .content {
+        padding-bottom: 9%;
+    }
+    .city {
+        width: 63%;
+        margin: 0px auto;
+    }
 }
