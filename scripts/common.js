@@ -73,6 +73,7 @@ function loginTemplate() {
 }
 
 function loginFunction(e) {
+
     e.preventDefault();
     alert("Login Successfully");
 }
