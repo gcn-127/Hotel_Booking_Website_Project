@@ -78,23 +78,6 @@ function loginFunction(e) {
     alert("Login Successfully");
 }
 
-
-function localstore() {
-    var inputUsername = document.getElementById("username");
-    var inputPassword = document.getElementById("password");
-    localStorage.setItem("username", inputUsername.value);
-    localStorage.setItem("password", inputPassword.value);
-};
-
-function loginFunction() {
-    var inputUsername = localStorage.getItem("username");
-    var inputPassword = localStorage.getItem("password");
-    if (username === 'admin' && password === 'admin') {
-        document.getElementByID('welcomeMessage').innerHTML = "Welcome " + username + "!";
-    } else
-        document.getElementById('Incorrect username password').innerHTML;
-}
-
 function contactTemplate() {
     let contacttemplate =
         '<div class="modal-dialog" role="document">' +
@@ -126,3 +109,14 @@ function contactTemplate() {
         '</div>';
     document.getElementById('contactus-modal').innerHTML += contacttemplate;
 }
+
+
+$(document).ready(function() {
+    preloaderFadeOutTime = 1000;
+
+    function hidePreloader() {
+        var preloader = $('.spin');
+        preloader.fadeOut(preloaderFadeOutTime);
+    }
+    hidePreloader();
+});
